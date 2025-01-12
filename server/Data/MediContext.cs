@@ -25,7 +25,7 @@ public class MediContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        string connectionString = "server=mysql-medicanet-medica-net.k.aivencloud.com; port=18347; database=defaultdb; user=avnadmin; password=; Persist Security Info=False; Connect Timeout=300";
+        string connectionString = "server=localhost; port=3306; database=defaultdb; user=sa; password=Ma$terkey1; Persist Security Info=False; Connect Timeout=300";
         optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
     }
 
